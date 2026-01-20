@@ -19,7 +19,7 @@
 ## 安装
 
 ```bash
-npx add-skill https://github.com/user/ai-workflow/tree/main/skills/initial-project
+npx add-skill josui/bing-ai-workflow -s initial-project
 ```
 
 ## 支持的框架

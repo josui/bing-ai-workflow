@@ -20,7 +20,7 @@
 ## 安装
 
 ```bash
-npx add-skill https://github.com/user/ai-workflow/tree/main/skills/codex
+npx add-skill josui/bing-ai-workflow -s codex
 ```
 
 ## 前置要求

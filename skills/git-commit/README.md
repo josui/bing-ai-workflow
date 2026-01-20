@@ -18,7 +18,7 @@
 ## 安装
 
 ```bash
-npx add-skill https://github.com/user/ai-workflow/tree/main/skills/git-commit
+npx add-skill josui/bing-ai-workflow -s git-commit
 ```
 
 ## 提交类型

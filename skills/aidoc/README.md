@@ -18,7 +18,7 @@ AI 友好的文档管理技能，支持渐进式披露。
 ## 安装
 
 ```bash
-npx add-skill https://github.com/user/ai-workflow/tree/main/skills/aidoc
+npx add-skill josui/bing-ai-workflow -s aidoc
 ```
 
 ## 支持的 AI 配置文件
