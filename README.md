@@ -26,14 +26,37 @@
 
 ### 方式一：使用 add-skill（推荐）
 
-[add-skill](https://github.com/vercel-labs/agent-skills) 是 Vercel 提供的技能安装工具，支持多种 AI 编码工具。
+[add-skill](https://github.com/vercel-labs/add-skill) 是 Vercel 提供的技能安装工具，支持多种 AI 编码工具。
 
 ```bash
-# 安装单个技能
-npx add-skill https://github.com/user/bing-ai-workflow/tree/main/skills/git-commit
+# 安装所有技能
+npx add-skill josui/bing-ai-workflow
 
-# 根据当前使用的工具自动选择配置文件
+# 选择安装特定技能
+npx add-skill josui/bing-ai-workflow -s git-commit -s aidoc
+
+# 安装到全局目录
+npx add-skill josui/bing-ai-workflow -g
+
+# 指定 AI 工具
+npx add-skill josui/bing-ai-workflow -a claude-code -a codex
+
+# 查看仓库中的技能列表
+npx add-skill josui/bing-ai-workflow -l
+
+# 非交互式安装（CI/CD）
+npx add-skill josui/bing-ai-workflow -y
 ```
+
+**命令选项：**
+
+| 选项 | 简写 | 说明 |
+|------|------|------|
+| `--skill <names>` | `-s` | 选择安装特定技能 |
+| `--global` | `-g` | 安装到全局目录 |
+| `--agent <agents>` | `-a` | 指定目标 AI 工具 |
+| `--list` | `-l` | 列出可用技能 |
+| `--yes` | `-y` | 跳过确认提示 |
 
 ### 方式二：手动安装
 
