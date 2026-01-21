@@ -30,3 +30,7 @@ skills/<skill-name>/
 ├── references/        # 可选 - 参考文档
 └── assets/            # 可选 - 模板文件
 ```
+
+### Git 提交
+
+始终使用 `git-commit` skill 提交更新。
